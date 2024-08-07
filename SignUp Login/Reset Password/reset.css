@@ -1,0 +1,8 @@
+.left-side-con {
+  width: 40vw;
+}
+@media screen and (max-width: 426px) {
+  .left-side-con {
+    width: 80%;
+  }
+}

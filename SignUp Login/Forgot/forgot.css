@@ -1,0 +1,39 @@
+.form-content {
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  opacity: 0;
+  transform: translateX(-20px);
+}
+
+.form-content.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+.left-side-con {
+  width: 40vw;
+}
+.BTL {
+  margin-bottom: 20px;
+}
+.BTL a {
+  text-decoration: none;
+  color: #313131;
+}
+@media screen and (max-width: 769px) {
+  .login-text {
+    font-size: 30px;
+  }
+  .login-descp {
+    font-size: small;
+  }
+  .BTL {
+    font-size: smaller;
+  }
+}
+@media screen and (max-width: 426px) {
+  .left-side-con {
+    width: 80%;
+  }
+  .login-text {
+    font-size: larger;
+  }
+}

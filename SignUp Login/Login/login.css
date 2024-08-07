@@ -1,0 +1,129 @@
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+.container {
+  height: 100vh;
+}
+.logo-con {
+  padding-top: 15px;
+}
+.logo-con img {
+  width: 206px;
+  height: 55px;
+}
+.main-con {
+  display: flex;
+  gap: 10vw;
+  justify-content: center;
+  align-items: center;
+  height: 89vh;
+}
+.login-det-con {
+  margin-bottom: 30px;
+}
+.login-text {
+  color: #313131;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.login-descp {
+  color: #313131;
+  font-size: 16px;
+  font-weight: 400;
+}
+.div-input {
+  margin-bottom: 15px;
+}
+.div-input input {
+  border: 1px solid #79747e;
+  padding: 10px;
+  border-radius: 4px;
+  width: 100%;
+}
+.rem-fgt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #313131;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+.check-con{
+    display: flex;
+    align-items: center;
+}
+.check-input {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    border: black solid 1.5px;
+  }
+.forgot-text a {
+    text-decoration: none;
+  color: #ff8682;
+}
+button {
+  font-family: "inter";
+  font-weight: 600;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 1);
+  background: linear-gradient(180deg, #0790de 0%, #6bb3ff 47.67%);
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.return-page {
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+}
+.sign-up a {
+    text-decoration: none;
+  color: #ff8682;
+}
+.right-side-con img {
+  width: 25vw;
+  /* height: 100vh; */
+}
+@media screen and (max-width: 511px) {
+  .right-side-con {
+    display: none;
+  }
+  .div-input input {
+    width: 93%;
+  }
+  .logo-con img{
+    width: 146px;
+    height: 38px;
+  }
+  .rem-fgt{
+    font-size: smaller;
+  }
+}
+@media screen and (max-width: 376px) {
+  .login-text {
+    font-size: 30px;
+  }
+  .login-descp {
+    font-size: small;
+  }
+  .div-input input {
+    width: 89%;
+  }
+  .rem-fgt{
+    font-size: x-small;
+  }
+  button {
+    font-size: 15px;
+    padding: 10px 0;
+  }
+}
