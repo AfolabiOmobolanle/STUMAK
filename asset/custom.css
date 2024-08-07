@@ -1,0 +1,58 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+.slider-container {
+    position: relative;
+    
+    height: 600px;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-height: 100%;
+}
+@keyframes scrollUp {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-50%); }
+}
+
+@keyframes scrollDown {
+    0% { transform: translateY(-50%); }
+    100% { transform: translateY(0); }
+}
+
+.card-scrollUp .slider {
+    animation: scrollUp 30s linear infinite;
+}
+
+.card-scrollDown .slider {
+    animation: scrollDown 30s linear infinite;
+}
+.slide img {
+    width: 200px;
+    height: 250px;
+    padding: 10px;
+    border-radius: 15%;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.text-primary {
+    color: #007bff;
+}
