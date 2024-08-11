@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const errorMessage = document.getElementById("errorMessage")
 
   submitButton.addEventListener("click", function (event) {
-    event.preventDefault(); // Prevent form submission
+    event.preventDefault(); 
 
     if (emailInput.value.trim() === "") {
       errorMessage.style.display ="block";

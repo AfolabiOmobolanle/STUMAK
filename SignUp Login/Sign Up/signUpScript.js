@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
           customerImg.style.display = "none";
           vendorForm.style.display = "block";
           vendorImg.style.display = "block";
-        }, 400); // Matches the transition duration
+        }, 400);
       } else {
         vendorForm.classList.remove("active");
         vendorImg.classList.remove("active");
@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function() {
           vendorImg.style.display = "none";
           customerForm.style.display = "block";
           customerImg.style.display = "block";
-        }, 400); // Matches the transition duration
+        }, 400);
       }
     });
   });
