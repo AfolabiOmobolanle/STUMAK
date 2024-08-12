@@ -21020,34 +21020,54 @@ a.text-primary-hover:hover, button.text-primary-hover:hover {
   transition: transform 0.1s ease-in-out;
 }
 
-.custom-carousel-control-prev,
-.custom-carousel-control-next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.carousel-content {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
 }
 
-.custom-carousel-control-prev {
-    left: 10px;
-    color: blue;
+.carousel-caption {
+  position: absolute;
+  left: 5%;
+  padding-right: 5rem;
+}
+.carousel-image {
+  position: relative;
+  right: 10%;
+}
+.custom-prev, .custom-next {
+  top: 50%;
+  transform:translate-middle-y(-50%);
+  background-color: #068138;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #007bff;
 }
 
-.custom-carousel-control-next {
-    right: 10px;
+.custom-prev {
+  left: 0;
 }
 
-.custom-carousel-control-prev-icon,
-.custom-carousel-control-next-icon {
-    filter: invert(0);
-    width: 20px;
-    height: 20px;
+.custom-next {
+  right: 0;
+}
+
+.custom-prev-icon, .custom-next-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.custom-prev-icon, .custom-next-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: blue; /* Ensures the icons are blue */
+  mask-image: url('path_to_icon.svg'); /* Replace this with the correct icon path */
+  mask-size: cover;
 }
 
 .sidebar {
@@ -21141,4 +21161,64 @@ a.text-primary-hover:hover, button.text-primary-hover:hover {
   display: block;
   width: 200px;
   text-align: center;
+}
+.blog-post {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
+}
+
+.blog-post img {
+  border-radius: 10px;
+  width: 40rem;
+}
+
+
+.blog-post-content h5 {
+  color: #007bff;
+}
+
+.categories {
+  background-color: #fff;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 250px;
+}
+
+.categories h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.categories ul {
+ flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.categories ul li {
+  margin-bottom: 10px;
+}
+
+.search-bar {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.search-bar input {
+  padding-right: 40px;
+}
+
+.search-bar svg {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
 }
