@@ -21013,10 +21013,41 @@ a.text-primary-hover:hover, button.text-primary-hover:hover {
   padding-left: 10rem;
   margin: 10rem;
   border-radius: 1rem;
+  overflow: hidden;
 }
 
 .carousel-item{
   transition: transform 0.1s ease-in-out;
+}
+
+.custom-carousel-control-prev,
+.custom-carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-carousel-control-prev {
+    left: 10px;
+    color: blue;
+}
+
+.custom-carousel-control-next {
+    right: 10px;
+}
+
+.custom-carousel-control-prev-icon,
+.custom-carousel-control-next-icon {
+    filter: invert(0);
+    width: 20px;
+    height: 20px;
 }
 
 .sidebar {
