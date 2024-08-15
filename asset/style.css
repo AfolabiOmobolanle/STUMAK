@@ -22213,23 +22213,51 @@ button.text-primary-hover:hover {
 }
 .post-sidebar {
   background-color: #fff;
-  padding: 15px;
-  border-radius: 10px;
-  border: 1px solid #e5e4e0;
-  height: 100%;
+  padding: 1rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   height: 100%;
 }
-.profile-card {
+.profile-card{
   text-align: center;
   margin-bottom: 20px;
+  padding: 1rem ;
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  height: 50%;
+
+}
+.sidebar-nav {
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  height: 40%;
+}
+.sidebar-nav-two{
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  height: 20%;
 }
 .profile-card img {
   border-radius: 50%;
   width: 100px;
   margin-bottom: 10px;
 }
-.profile-card h5 {
+.profile-card h5 p{
   color: #231656;
   font-weight: bold;
+}
+.profile-text{
+  color: #231656;
+  font-weight: 900;
+
 }
 .nav-links {
   color: #333;
@@ -22247,7 +22275,7 @@ button.text-primary-hover:hover {
   color: #3d0f71;
 }
 .nav-item:not(:last-child) {
-  border-bottom: 1px solid #e5e4e0;
+ 
   padding-bottom: 10px;
 }
 .post-card {
@@ -22313,12 +22341,39 @@ button.text-primary-hover:hover {
   margin-bottom: 10px;
 }
 
-.badge.bg-success .badgeone {
-  background-color: #28a745;
-}
 .bi-pencil-square{
   color: #4D30BC;
 }
 .header-text{
   color: #231656;
+}
+.contact{
+  background-color:#00a8ff;
+  width: 8rem;
+  border-radius: .2rem;
+  text-align: center;
+}
+.notification-item {
+  border: 1px dotted #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.notification-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+}
+.notification-content {
+  flex: 1;
+  padding-left: 10px;
+}
+.mark-read {
+  float: right;
+  font-size: 0.9em;
+  color: #007bff;
+  cursor: pointer;
+}
+.mark-read:hover {
+  text-decoration: underline;
 }
